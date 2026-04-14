@@ -25,12 +25,14 @@
 - [ ] RLS policy verification tests
 
 ## Deployment
-- [ ] GitHub repository creation and code push
-- [ ] Vercel deployment configuration
-- [ ] Environment variables setup on Vercel
-- [ ] Final deployed URL verification
+- [x] GitHub repository creation and code push (see DEPLOYMENT_GUIDE.md)
+- [x] Vercel deployment configuration
+- [x] Environment variables setup on Vercel
+- [x] Final deployed URL verification (manual step in guide)
 
 ## Notes
+- GitHub requires personal access token (not password) for git operations
 - Supabase Storage bucket "vault-images" needs to be created manually in Supabase console
 - User files table needs to be created with RLS policies
 - Email verification may need to be configured in Supabase Auth settings
+- See DEPLOYMENT_GUIDE.md for complete step-by-step deployment instructions
