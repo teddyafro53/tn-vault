@@ -5,12 +5,21 @@ import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
+import SignUp from "./pages/SignUp";
+import SignIn from "./pages/SignIn";
+import Dashboard from "./pages/Dashboard";
+import Upload from "./pages/Upload";
+import Gallery from "./pages/Gallery";
 
 function Router() {
-  // make sure to consider if you need authentication for certain routes
   return (
     <Switch>
       <Route path={"/"} component={Home} />
+      <Route path={"/signup"} component={SignUp} />
+      <Route path={"/signin"} component={SignIn} />
+      <Route path={"/dashboard"} component={Dashboard} />
+      <Route path={"/upload"} component={Upload} />
+      <Route path={"/gallery"} component={Gallery} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
@@ -27,7 +36,7 @@ function App() {
   return (
     <ErrorBoundary>
       <ThemeProvider
-        defaultTheme="light"
+        defaultTheme="dark"
         // switchable
       >
         <TooltipProvider>
