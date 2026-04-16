@@ -114,3 +114,5 @@ client/public/__manus__/version.json
 
 # Vercel
 .vercel/
+.vercel
+.env*.local

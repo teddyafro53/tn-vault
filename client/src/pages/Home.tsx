@@ -32,6 +32,13 @@ export default function Home() {
           </h1>
           <div className="flex gap-4">
             <Button
+              onClick={() => navigate("/pricing")}
+              variant="ghost"
+              className="text-slate-300 hover:bg-slate-800"
+            >
+              Pricing
+            </Button>
+            <Button
               onClick={() => navigate("/signin")}
               variant="outline"
               className="border-slate-700 text-slate-300 hover:bg-slate-800"

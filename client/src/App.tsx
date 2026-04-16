@@ -10,6 +10,7 @@ import SignIn from "./pages/SignIn";
 import Dashboard from "./pages/Dashboard";
 import Upload from "./pages/Upload";
 import Gallery from "./pages/Gallery";
+import Pricing from "./pages/Pricing";
 
 function Router() {
   return (
@@ -20,6 +21,7 @@ function Router() {
       <Route path={"/dashboard"} component={Dashboard} />
       <Route path={"/upload"} component={Upload} />
       <Route path={"/gallery"} component={Gallery} />
+      <Route path={"/pricing"} component={Pricing} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
